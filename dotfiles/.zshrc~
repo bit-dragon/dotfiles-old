@@ -1,0 +1,36 @@
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="bdragon_"
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="mate ~/.zshrc"
+alias repo="cd ~/repositorios/"
+alias lbs="cd ~/repositorios/logicalbricks"
+alias ns="cd ~/repositorios/nearsoft"
+alias vv="mvim"
+alias v="vi"
+alias zf=/usr/local/ZendFrameworkCli/bin/zf.sh
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias be-"bundle exec "
+
+plugins=(git zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+export PATH=/Users/Punker/.rvm/gems/ruby-1.9.2-p290@cc/bin:/Users/Punker/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/Punker/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/Punker/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/texbin
+
+export APP_ID='294146134034434'
+export APP_SECRET='be90cf31555810aa0b878812ab653cf9'
+
+export CLIENT_ID='428501072900.apps.googleusercontent.com'
+export CLIENT_SECRET='iB-skFyDmDDkunDC01nRt2P3'
+
+export ANDROID_HOME=/User/Punker/android-sdks
