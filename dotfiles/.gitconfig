@@ -12,6 +12,7 @@
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
   merge-branch = !git checkout master && git merge @{-1} --ff-only
   rebase-origin = !git fetch origin && git rebase origin/master
+   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbr ev-commit
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
