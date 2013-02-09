@@ -19,7 +19,17 @@ set expandtab
 
 
 " Color scheme
-colorscheme vividchalk
+if has('gui_running')
+  "colorscheme codeschool
+  colorscheme Tomorrow-Night-Bright
+else
+  colorscheme vividchalk
+endif
+
+" Font options
+if has('gui_running')
+  set guifont=Inconsolata\ 11
+endif
 
 " Numbers
 set number
@@ -34,3 +44,13 @@ set guioptions-=T
 
 " Use console dialogs
 set guioptions+=c
+
+" ----------------------------------------
+" Key mapping
+" ----------------------------------------
+
+" Gundo
+nnoremap <f5> :GundoToggle<CR>
+
+" Nerdtree
+nnoremap <F4> :NERDTree<CR>
